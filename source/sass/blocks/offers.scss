@@ -1,16 +1,13 @@
 .offers {
-  width: 1366px;
   height: 784px;
   padding: 1px 0;
   text-align: center;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    width: 768px;
     height: 882px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
-    width: 320px;
     height: 1191px;
   }
 }

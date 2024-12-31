@@ -1,16 +1,13 @@
 .faq {
-    width: 1366px;
     background-color: #f9f9f9;
     color: #102654;
     padding-bottom: 100px;
 
     @media screen and (width >= 768px) and (width <= 1365px) {
-      width: 768px;
       padding-bottom: 60px;
     }
 
     @media screen and (width >= 320px) and (width <= 767px) {
-      width: 320px;
       padding-bottom: 70px;
     }
 }

@@ -1,25 +1,20 @@
 .price {
   position: relative;
-  height: 791px;
-  max-width: 1366px;
   background-color: #f8f9fc;
   background-image: url("../img/price/disks.png");
   background-repeat: no-repeat;
-  background-size: 28%;
-  background-position: top 351px left 1058px;
+  background-size: 280px;
+  background-position: bottom right -70px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    height: 1730px;
-    max-width: 768px;
-    background-size: 42%;
-    background-position: bottom 0 left 444px;
+    background-size: 260px;
+    background-position: bottom right;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     height: 1420px;
-    max-width: 320px;
     background-image: none;
   }
 }
@@ -133,13 +128,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  max-width: 1160px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     display: flex;
     flex-direction: column;
-    padding-left: 194px;
-    padding-right: 194px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {

@@ -1,17 +1,14 @@
 .games {
   position: relative;
-  max-width: 1366px;
   height: 700px;
   padding: 1px 0;
   color: #ffffff;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    max-width: 768px;
     height: 468px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
-    max-width: 320px;
     height: 660px;
   }
 }

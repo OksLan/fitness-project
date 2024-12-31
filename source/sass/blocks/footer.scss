@@ -1,15 +1,12 @@
 .footer {
   background-color: #030a1a;
-  width: 1366px;
   height: 106px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    width: 768px;
     height: 115px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
-    width: 320px;
     height: 245px;
   }
 }

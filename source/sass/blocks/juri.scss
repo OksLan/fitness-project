@@ -3,16 +3,13 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  // width: 1366px;
   height: 600px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    // width: 768px;
     height: 490px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
-    width: 320px;
     height: 432px;
   }
 }
@@ -72,7 +69,6 @@
   bottom: 25px;
   color: #ffffff;
   left: 0;
-  // transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
 }

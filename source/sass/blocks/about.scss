@@ -1,57 +1,53 @@
 .about {
   position: relative;
-  height: 760px;
-  width: 1366px;
-
-  @media screen and (width >= 768px) and (width <= 1365px) {
-    height: 751px;
-    width: 768px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    height: 812px;
-    width: 320px;
-  }
-}
-
-.about .section-wrapper {
-  @media screen and (width >= 320px) and (width <= 767px) {
-    all: unset;
-  }
 }
 
 .about__gym {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   padding-top: 120px;
   padding-bottom: 220px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
+    width: 678px;
+    align-items: center;
+    gap: 36px;
     flex-direction: column;
-    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 120px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     flex-direction: column;
-    padding: 0;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
 .about__content {
   display: flex;
   flex-direction: column;
-  margin-right: 145px;
+  width: 355px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 36px;
+    width: 502px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 290px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -129,25 +125,49 @@
 }
 
 .about__image {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 400px;
+  width: 660px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     margin-bottom: 36px;
+    width: 100%;
+    height: 345px;
   }
 }
 
 .about__video {
   position: absolute;
-  transform: translate(111%, -145%);
+  transform: translate(-50%, 0%);
+  left: 50%;
+  bottom: 125px;
+  width: 360px;
+  height: 230px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    transform: translate(75%, -50%);
+    width: 270px;
+    height: 170px;
+    bottom: 35px;
+    left: 50%;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     transform: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
   }
 }
 
@@ -166,19 +186,12 @@
 // }
 
 .about__play-button-wrapper {
-  position: relative;
-  bottom: 166px;
-  left: 128px;
-
-  @media screen and (width >= 768px) and (width <= 1365px) {
-    bottom: 121px;
-    left: 100px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    bottom: 120px;
-    left: 122px;
-  }
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .play-button {
