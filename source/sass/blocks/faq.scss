@@ -127,115 +127,6 @@
   }
 }
 
-.faq__details {
-  border-bottom: 1px solid #74819c;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-.faq__details:first-child {
-  border-top: 1px solid #74819c;
-}
-
-.faq__details[open] {
-  animation: open_details 4s;
-}
-
-  @keyframes open_details {
-    0% {
-      max-height: 80px;
-    }
-
-    100% {
-      max-height: 500px;
-    }
-  }
-
-/* кружок для плюса */
-.faq__details::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  background: transparent;
-  border: 1px solid #1c3374;
-  left: 817px;
-  box-sizing: border-box;
-
-  @media screen and (width >= 768px) and (width <= 1365px) {
-    left: 636px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    width: 30px;
-    height: 30px;
-    left: 259px;
-    top: 32px;
-  }
-}
-
-/* плюс - свернутое состояние */
-  .faq__details::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(to right, #1c3374 100%, transparent 50%),
-                linear-gradient(to bottom, #1c3374 100%, transparent 50%);
-    background-size: 100% 1px, 1px 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 33px;
-    left: 827px;
-
-  @media screen and (width >= 768px) and (width <= 1365px) {
-    top: 32px;
-    left: 646px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    width: 14px;
-    height: 14px;
-    top: 40px;
-    left: 267px;
-  }
-}
-
-/* кружок для минуса */
-.faq__details[open]::before {
-  background: #1c3374;
-}
-
-/* минус - развернутое состояние */
-.faq__details[open]::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 1px;
-  background: linear-gradient(to right, #ffffff 100%, transparent 50%);
-  background-size: 100% 1px;
-  background-position: center;
-  background-repeat: no-repeat;
-  // left: 827px;
-  top: 42px;
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    top: 47px;
-    left: 264px;
-  }
-}
-
 .faq__question {
   font-size: 24px;
   line-height: 24px;
@@ -278,7 +169,142 @@
   }
 }
 
-/* фоны для hover и focus */
+.faq__details {
+  border-bottom: 1px solid #74819c;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.faq__details:first-child {
+  border-top: 1px solid #74819c;
+}
+
+.faq__details[open] {
+  animation: open_details 4s;
+}
+
+  @keyframes open_details {
+    0% {
+      max-height: 80px;
+    }
+
+    100% {
+      max-height: 500px;
+    }
+  }
+
+/* дефолтное состояние кружка и плюса */
+.faq__details:default::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background: #f9f9f9;
+  border: 1px solid #1c3374;
+  left: 817px;
+  box-sizing: border-box;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    left: 636px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 30px;
+    height: 30px;
+    left: 259px;
+    top: 32px;
+  }
+}
+
+.faq__details:default::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right, #1c3374 100%, transparent 50%),
+              linear-gradient(to bottom, #1c3374 100%, transparent 50%);
+  background-size: 100% 1px, 1px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 33px;
+  left: 827px;
+
+@media screen and (width >= 768px) and (width <= 1365px) {
+  top: 32px;
+  left: 646px;
+}
+
+@media screen and (width >= 320px) and (width <= 767px) {
+  width: 14px;
+  height: 14px;
+  top: 40px;
+  left: 267px;
+}
+}
+
+/* свернутое состояние - кружок для плюса */
+.faq__details::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background: #f9f9f9;
+  border: 1px solid #1c3374;
+  left: 817px;
+  box-sizing: border-box;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    left: 636px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 30px;
+    height: 30px;
+    left: 259px;
+    top: 32px;
+  }
+}
+
+/* свернутое состояние - плюс */
+  .faq__details::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, #1c3374 100%, transparent 50%),
+                linear-gradient(to bottom, #1c3374 100%, transparent 50%);
+    background-size: 100% 1px, 1px 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 33px;
+    left: 827px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    top: 32px;
+    left: 646px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 14px;
+    height: 14px;
+    top: 40px;
+    left: 267px;
+  }
+}
+
+/* фон для hover и focus */
 .faq__details:hover::before{
   background: #1c3374;
 }
@@ -303,8 +329,20 @@
   background-repeat: no-repeat;
   top: 33px;
   left: 827px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    left: 646px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    top: 40px;
+    left: 267px;
+    width: 14px;
+    height: 14px;
+  }
 }
 
+/* disabled */
 .faq__details:disabled::before{
   background: transparent;
   border: 1px solid rgba(28, 51, 116, 0.3);
@@ -325,3 +363,31 @@
   left: 827px;
 }
 
+/* развернутое состояние - кружок для минуса */
+.faq__details[open]::before {
+  background: #1c3374;
+}
+
+/* развернутое состояние - минус */
+.faq__details[open]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: linear-gradient(to bottom, #ffffff 100%, transparent 50%);
+  background-size: 100% 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 42px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    left: 646px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    top: 47px;
+    left: 267px;
+    width: 14px;
+  }
+}

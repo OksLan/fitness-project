@@ -29,3 +29,25 @@
     margin-bottom: 40px;
   }
 }
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c3374;
+  color: #ffffff;
+  padding: 60px;
+  width: 560px;
+  height: 258px;
+}
+
+.reviews__item-name {
+  font-size: 22px;
+  line-height: 22px;
+
+}
+
+.reviews__item-text {
+  font-family: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}

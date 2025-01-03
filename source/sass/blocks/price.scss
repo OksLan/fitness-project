@@ -3,14 +3,13 @@
   background-color: #f8f9fc;
   background-image: url("../img/price/disks.png");
   background-repeat: no-repeat;
-  background-size: 280px;
-  background-position: bottom right -56px;
+  background-size: 384px;
+  background-position: bottom right -77px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    background-size: 260px;
+    background-size: 328px;
     background-position: bottom right;
     padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
@@ -155,6 +154,7 @@
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     height: 460px;
+    margin: 0 auto;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {

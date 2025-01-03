@@ -35,8 +35,6 @@
 
 .juri__list {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
   width: 1160px;
   height: 300px;
   position: relative;
@@ -56,10 +54,6 @@
 
 .juri__item-pic {
   position: relative;
-
-  @media screen and (width >= 320px) and (width <= 1365px) {
-    width: 260px;
-  }
 }
 
 .juri__item-name {
