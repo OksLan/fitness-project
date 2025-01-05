@@ -33,15 +33,7 @@
   }
 }
 
-.swiper-wrapper.juri__list-wrapper {
-
-  @media screen and (width >= 768px) and (width <= 1365px) {
-    width: 560px;
-  }
-}
-
-
-.swiper.juri__list {
+.swiper.juri__swiper {
   display: flex;
   width: 1160px;
   height: 300px;
@@ -55,6 +47,13 @@
 
   @media screen and (width >= 320px) and (width <= 767px) {
     width: 260px;
+  }
+}
+
+.swiper-wrapper.juri__list {
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    width: 560px;
   }
 }
 
@@ -140,8 +139,13 @@
 }
 
 .juri .swiper-button-next {
-  right: 60px;
-  left: auto;
+  right: 72px;
+  top: 364px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    right: 52px;
+    top: 283px;
+  }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     display: none;
@@ -149,8 +153,13 @@
 }
 
 .juri .swiper-button-prev {
-  left: 60px;
-  right: auto;
+  left: 72px;
+  top: 364px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    left: 52px;
+    top: 283px;
+  }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     display: none;
