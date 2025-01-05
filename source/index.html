@@ -199,19 +199,20 @@
     <div class="section-wrapper juri-wrapper">
       <h3 class="juri__title">Жюри</h3>
       <div class="swiper juri__list">
+        <div class="swiper-button-prev arrow"></div>
 
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper juri__list-wrapper">
           <div class="swiper-slide juri__item swiper-slide--one">
             <div class="juri__item-pic">
               <picture>
-                <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
+                <!-- <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
                 srcset="img/juri/AnPavl@1x.webp 1x, img/juri/AnPavl@2x.webp 2x">
                 <source media="(min-width: 767px)" type="image/webp" width="260" height="300"
                 srcset="img/juri/AnPavl@1x.webp 1x, img/juri/AnPavl@2x.webp 2x">
                 <source media="(min-width: 1365px)" type="image/jpg" width="260" height="300"
                 srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x">
                 <source media="(min-width: 767px)" type="image/jpg" width="260" height="300"
-                srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x">
+                srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x"> -->
                 <img class="juri__pic" width="260" height="300" src="img/juri/AnPavl@1x.jpg" alt="Член жюри Игр SuperGames Анна Павлова">
               </picture>
               <span class="juri__item-name">Анна Павлова</span>
@@ -304,9 +305,34 @@
                 </ul>
             </div>
           </div>
-        </div>
 
-        <div class="swiper-button-prev arrow"></div>
+          <div class="swiper-slide juri__item swiper-slide--five">
+            <div class="juri__item-pic">
+              <picture>
+                <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/AnPavl@1x.webp 1x, img/juri/AnPavl@2x.webp 2x">
+                <source media="(min-width: 767px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/AnPavl@1x.webp 1x, img/juri/AnPavl@2x.webp 2x">
+                <source media="(min-width: 1365px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x">
+                <source media="(min-width: 767px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x">
+                <img class="juri__pic" width="260" height="300" src="img/juri/AnPavl@1x.jpg" alt="Член жюри Игр SuperGames Анна Павлова">
+              </picture>
+              <span class="juri__item-name">Анна Павлова</span>
+            </div>
+            <div class="juri__item-hover juri__person">
+                <h6 class="juri__person-name">Анна Павлова</h6>
+                <p class="juri__person-discipline">CrossFit</p>
+                <ul class="juri__person-about">
+                  <li class="juri__person-fact">Certified Level 3 Trainer</li>
+                  <li class="juri__person-fact">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__person-fact">Опыт — 6 лет</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      
         <div class="swiper-button-next arrow"></div>
 
       </div>
@@ -534,7 +560,27 @@
               Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
 
-          <!-- <div class="swiper-slide reviews__item swiper-slide--two">
+        <div class="swiper-slide reviews__item swiper-slide--two">
+            <div class="reviews__item-pic">
+              <picture>
+                <source media="(min-width: 1365px)" type="image/webp" width="80" height="80"
+                srcset="img/reviews/AnOrl@1x.webp 1x, img/reviews/AnOrl@2x.webp 2x">
+                <source media="(min-width: 767px)" type="image/webp" width="80" height="80"
+                srcset="img/reviews/AnOrl@1x.webp 1x, img/reviews/AnOrl@2x.webp 2x">
+                <source media="(min-width: 1365px)" type="image/png" width="80" height="80"
+                srcset="img/reviews/AnOrl@1x.png 1x, img/reviews/AnOrl@2x.png 2x">
+                <source media="(min-width: 767px)" type="image/png" width="80" height="80"
+                srcset="img/reviews/AnOrl@1x.png 1x, img/reviews/AnOrl@2x.png 2x">
+                <img class="reviews__pic" width="68" height="68" src="img/reviews/AnOrl@1x.png" alt="Клиент SuperGym Анна Орлова">
+              </picture>
+            </div>
+            <h6 class="reviews__item-name">Анна Орлова</h6>
+            <p class="reviews__item-text">«Хожу в Supergym уже больше года.
+              Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.
+              Зал просторный, даже в вечернее время нет очередей»</p>
+        </div>
+
+        <div class="swiper-slide reviews__item swiper-slide--three">
             <div class="reviews__item-pic">
               <picture>
                 <source media="(min-width: 1365px)" type="image/webp" width="80" height="80"
@@ -553,25 +599,7 @@
               Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.
               Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
-          <div class="swiper-slide reviews__item swiper-slide--three">
-            <div class="reviews__item-pic">
-              <picture>
-                <source media="(min-width: 1365px)" type="image/webp" width="80" height="80"
-                srcset="img/reviews/AnOrl@1x.webp 1x, img/reviews/AnOrl@2x.webp 2x">
-                <source media="(min-width: 767px)" type="image/webp" width="80" height="80"
-                srcset="img/reviews/AnOrl@1x.webp 1x, img/reviews/AnOrl@2x.webp 2x">
-                <source media="(min-width: 1365px)" type="image/png" width="80" height="80"
-                srcset="img/reviews/AnOrl@1x.png 1x, img/reviews/AnOrl@2x.png 2x">
-                <source media="(min-width: 767px)" type="image/png" width="80" height="80"
-                srcset="img/reviews/AnOrl@1x.png 1x, img/reviews/AnOrl@2x.png 2x">
-                <img class="reviews__pic" width="68" height="68" src="img/reviews/AnOrl@1x.png" alt="Клиент SuperGym Анна Орлова">
-              </picture>
-            </div>
-            <h6 class="reviews__item-name">Анна Орлова</h6>
-            <p class="reviews__item-text">«Хожу в Supergym уже больше года.
-              Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.
-              Зал просторный, даже в вечернее время нет очередей»</p>
-          </div> -->
+
         </div>
 
         <div class="swiper-button-prev arrow"></div>

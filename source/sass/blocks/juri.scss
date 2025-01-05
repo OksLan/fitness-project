@@ -33,11 +33,21 @@
   }
 }
 
-.juri__list {
+.swiper-wrapper.juri__list-wrapper {
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    width: 560px;
+  }
+}
+
+
+.swiper.juri__list {
   display: flex;
   width: 1160px;
   height: 300px;
   position: relative;
+  align-items: center;
+  justify-content: space-between;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 560px;

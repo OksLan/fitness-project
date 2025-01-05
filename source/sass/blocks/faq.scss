@@ -201,59 +201,8 @@
     }
   }
 
-/* дефолтное состояние кружка и плюса */
-.faq__details:default::before{
-  content: "";
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  background: #f9f9f9;
-  border: 1px solid #1c3374;
-  left: 817px;
-  box-sizing: border-box;
-
-  @media screen and (width >= 768px) and (width <= 1365px) {
-    left: 636px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    width: 30px;
-    height: 30px;
-    left: 259px;
-    top: 32px;
-  }
-}
-
-.faq__details:default::after{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(to right, #1c3374 100%, transparent 50%),
-              linear-gradient(to bottom, #1c3374 100%, transparent 50%);
-  background-size: 100% 1px, 1px 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 33px;
-  left: 827px;
-
-@media screen and (width >= 768px) and (width <= 1365px) {
-  top: 32px;
-  left: 646px;
-}
-
-@media screen and (width >= 320px) and (width <= 767px) {
-  width: 14px;
-  height: 14px;
-  top: 40px;
-  left: 267px;
-}
-}
-
 /* свернутое состояние - кружок для плюса */
-.faq__details::before {
+.faq__question::before {
   content: "";
   width: 40px;
   height: 40px;
@@ -277,7 +226,7 @@
 }
 
 /* свернутое состояние - плюс */
-  .faq__details::after {
+.faq__question::after {
     content: "";
     display: block;
     position: absolute;
@@ -305,18 +254,13 @@
 }
 
 /* фон для hover и focus */
-.faq__details:hover::before{
+.faq__question:hover::before {
   background: #1c3374;
 }
 
-.faq__details:focus::before{
-  background: #74819c;
-  border: 1px solid #1c3374;
-}
-
 /* плюс белый для hover и focus */
-.faq__details:hover::after,
-.faq__details:focus::after {
+.faq__question:hover::after,
+.faq__question:focus::after {
   content: "";
   display: block;
   position: absolute;
@@ -342,13 +286,20 @@
   }
 }
 
+.faq__question:focus::before{
+  background: #74819c;
+  border: 1px solid #1c3374;
+}
+
+
+
 /* disabled */
-.faq__details:disabled::before{
+.faq__details:disabled .faq__question::before{
   background: transparent;
   border: 1px solid rgba(28, 51, 116, 0.3);
 }
 
-.faq__details:disabled::after {
+.faq__details:disabled .faq__question::after {
   content: "";
   display: block;
   position: absolute;
@@ -364,12 +315,12 @@
 }
 
 /* развернутое состояние - кружок для минуса */
-.faq__details[open]::before {
+.faq__details[open] .faq__question::before {
   background: #1c3374;
 }
 
 /* развернутое состояние - минус */
-.faq__details[open]::after {
+.faq__details[open] .faq__question::after {
   content: "";
   display: block;
   position: absolute;
