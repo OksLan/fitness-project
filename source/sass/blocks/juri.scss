@@ -124,20 +124,6 @@
    font-size: 14px;
 }
 
-.juri .arrow {
-  color: #102654;
-  width: 16px;
-  height: 32px;
-}
-
-.juri .arrow::after {
-  font-size: 32px;
-}
-
-.juri__item:hover .juri__item-hover {
-  display: block;
-}
-
 .juri .swiper-button-next {
   right: 72px;
   top: 364px;
@@ -166,3 +152,61 @@
   }
 }
 
+.juri .arrow {
+  color: #102654;
+  width: 16px;
+  height: 32px;
+}
+
+.juri .arrow::after {
+  font-size: 32px;
+}
+
+.juri .arrow:hover::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #102654;
+  border-radius: 50%;
+  left: -17px;
+}
+
+.juri__item:hover .juri__item-hover {
+  display: block;
+}
+
+.juri .arrow:focus::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #102654;
+  background: #e8e8e8;
+  border-radius: 50%;
+  left: -17px;
+  z-index: -1;
+}
+
+.juri .arrow:active::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #102654;
+  background: #102654;
+  border-radius: 50%;
+  left: -17px;
+  top: -8px;
+  z-index: -1;
+}
+
+.juri .arrow:active {
+  color: #ffffff;
+  width: 16px;
+  height: 32px;
+}
+
+.juri .arrow:disabled {
+  color: rgba(16, 38, 84, 0.3);
+}

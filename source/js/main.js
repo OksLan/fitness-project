@@ -22,7 +22,6 @@ const juriSwiper = new Swiper('.juri__swiper', {
         320: {
           slidesPerView: 1,
         },
-
       },
 
   // Navigation arrows
@@ -37,21 +36,11 @@ const juriSwiper = new Swiper('.juri__swiper', {
   juriSwiper.init();
 
 /* свайпер блока REVIEWS*/
-  const swiper_reviews = new Swiper('.reviews__list', {
-    modules: [Navigation, Pagination],
-    // Optional parameters
+  const reviewsSwiper = new Swiper('.reviews__swiper', {
+    modules: [Navigation],
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 40,
     slidesPerView: 1,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      enabled: true,
-      type: 'bullets',
-    },
 
     // Navigation arrows
     navigation: {
@@ -60,12 +49,6 @@ const juriSwiper = new Swiper('.juri__swiper', {
       enabled: true,
       clickable: true,
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: true,
-    },
   });
 
-  swiper_reviews.init();
+  reviewsSwiper.init();

@@ -80,19 +80,20 @@
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 162px;
+    padding: 18px 28px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     font-size: 16px;
     line-height: 16px;
     width: 140px;
-    padding: 15px 23px;
+    padding: 14px 22px;
   }
 }
 
 .faq__tab.active {
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
 }
 
 .faq__tab:hover {

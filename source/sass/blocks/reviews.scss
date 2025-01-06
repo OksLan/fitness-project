@@ -1,4 +1,8 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
   height: 587px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
@@ -8,10 +12,6 @@
   @media screen and (width >= 320px) and (width <= 767px) {
     height: 480px;
   }
-}
-
-.reviews__wrapper {
-  width: 560px;
 }
 
 .reviews__title {
@@ -36,6 +36,29 @@
   }
 }
 
+.reviews__wrapper {
+  width: 560px;
+}
+
+.swiper.reviews__swiper {
+  display: flex;
+  height: 258px;
+  width: 560px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    height: 242px;
+    width: 500px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 240px;
+    height: 328px;
+  }
+}
+
 .swiper-slide.reviews__item {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -43,12 +66,12 @@
   background-color: #1c3374;
   color: #ffffff;
   padding: 60px;
-  width: 560px;
   height: 258px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    column-gap: 30px;
+    column-gap: 40px;
     padding: 40px 30px;
+    height: 242px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
@@ -56,12 +79,13 @@
     flex-direction: column;
     padding: 30px 25px;
     text-align: center;
-    width: 240px;
     height: 328px;
   }
 }
 
 .reviews__item-pic {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 
   @media screen and (width >= 320px) and (width <= 767px) {
     margin: 0 auto;
@@ -73,6 +97,8 @@
 .reviews__item-name {
   font-size: 22px;
   line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
 
   @media screen and (width >= 320px) and (width <= 767px) {
     font-size: 18px;
@@ -86,10 +112,95 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 
   @media screen and (width >= 320px) and (width <= 767px) {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
   }
+}
+
+.reviews .swiper-button-next {
+  right: 299px;
+  top: 364px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    right: 45px;
+    top: 283px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    display: none;
+  }
+}
+
+.reviews .swiper-button-prev {
+  left: 299px;
+  top: 364px;
+
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    left: 45px;
+    top: 283px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    display: none;
+  }
+}
+
+.reviews .arrow {
+  color: #102654;
+  width: 16px;
+  height: 32px;
+}
+
+.reviews .arrow::after {
+  font-size: 32px;
+}
+
+.reviews .arrow:hover::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #102654;
+  border-radius: 50%;
+  left: -17px;
+}
+
+.reviews .arrow:focus::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #102654;
+  background: #e8e8e8;
+  border-radius: 50%;
+  left: -17px;
+  z-index: -1;
+}
+
+.reviews .arrow:active::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #102654;
+  background: #102654;
+  border-radius: 50%;
+  left: -17px;
+  top: -8px;
+  z-index: -1;
+}
+
+.reviews .arrow:active {
+  color: #ffffff;
+  width: 16px;
+  height: 32px;
+}
+
+.reviews .arrow:disabled {
+  color: rgba(16, 38, 84, 0.3);
 }
