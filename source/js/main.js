@@ -52,3 +52,14 @@ const juriSwiper = new Swiper('.juri__swiper', {
   });
 
   reviewsSwiper.init();
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroButton = document.querySelector(".hero__button");
+    const priceSection = document.querySelector(".price");
+
+    if (heroButton && priceSection) {
+      heroButton.addEventListener("click", () => {
+        priceSection.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  });
