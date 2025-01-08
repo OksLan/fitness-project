@@ -338,3 +338,11 @@
     width: 14px;
   }
 }
+
+.faq__panel {
+  display: none;
+}
+
+.faq__panel.active {
+  display: block;
+}

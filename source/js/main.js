@@ -39,7 +39,6 @@ const juriSwiper = new Swiper('.juri__swiper', {
   const reviewsSwiper = new Swiper('.reviews__swiper', {
     modules: [Navigation],
     direction: 'horizontal',
-    loop: true,
     slidesPerView: 1,
 
     // Navigation arrows
@@ -87,4 +86,29 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+});
+
+/* переключение табов в блоке FAQ */
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".faq__tab");
+  const panels = document.querySelectorAll(".faq__panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // Удаляем активный класс у всех вкладок
+      tabs.forEach((t) => t.classList.remove("active"));
+      // Удаляем активный класс у всех панелей
+      panels.forEach((panel) => panel.classList.remove("active"));
+
+      // Добавляем активный класс текущей вкладке
+      tab.classList.add("active");
+
+      // Находим и показываем соответствующую панель
+      const targetId = tab.getAttribute("data-target");
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add("active");
+      }
+    });
+  });
 });

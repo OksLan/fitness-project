@@ -444,14 +444,17 @@
     <div class="section-wrapper">
       <h3 class="faq__title">Вопросы и ответы</h3>
       <div class="faq__container">
+
         <div class="faq__tabs">
-          <button class="faq__tab active" type="button">Центр</button>
-          <button class="faq__tab" type="button">Абонемент</button>
-          <button class="faq__tab" type="button">Услуги</button>
-          <button class="faq__tab" type="button">Правила</button>
+          <button class="faq__tab active" data-target="faq-center" type="button">Центр</button>
+          <button class="faq__tab" data-target="faq-cards" type="button">Абонемент</button>
+          <button class="faq__tab" data-target="faq-services" type="button">Услуги</button>
+          <button class="faq__tab" data-target="faq-rules" type="button">Правила</button>
         </div>
+
         <div class="faq__content">
-          <div class="faq__center">
+
+          <div class="faq__panel active" id="faq-center">
             <div class="faq__list">
               <details class="faq__details open">
                 <summary class="faq__question">Как стать членом фитнес-центра?</summary>
@@ -471,7 +474,8 @@
               </details>
             </div>
           </div>
-          <!-- <div class="faq__card">
+
+          <div class="faq__panel" id="faq-cards">
             <div class="faq__list">
               <details class="faq__details open">
                 <summary class="faq__question">Занятия с тренером входят в абонемент?</summary>
@@ -491,7 +495,8 @@
               </details>
             </div>
           </div>
-          <div class="faq__services">
+
+          <div class="faq__panel" id="faq-services">
             <div class="faq__list">
               <details class="faq__details open">
                 <summary class="faq__question">Предлагает ли клуб услуги по консультированию по вопросам питания?</summary>
@@ -511,7 +516,8 @@
               </details>
             </div>
           </div>
-          <div class="faq__rules">
+
+          <div class="faq__panel" id="faq-rules">
             <div class="faq__list">
               <details class="faq__details open">
                 <summary class="faq__question">Есть в фитнес-центре дресс-код?</summary>
@@ -530,7 +536,7 @@
                 <p class="faq__answer">...</p>
               </details>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
