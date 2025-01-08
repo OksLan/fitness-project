@@ -95,15 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      // Удаляем активный класс у всех вкладок
       tabs.forEach((t) => t.classList.remove("active"));
-      // Удаляем активный класс у всех панелей
       panels.forEach((panel) => panel.classList.remove("active"));
 
-      // Добавляем активный класс текущей вкладке
       tab.classList.add("active");
 
-      // Находим и показываем соответствующую панель
       const targetId = tab.getAttribute("data-target");
       const targetPanel = document.getElementById(targetId);
       if (targetPanel) {
