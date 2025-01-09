@@ -68,6 +68,7 @@
   font-size: 54px;
   line-height: 54px;
   margin-bottom: 36px;
+  font-weight: 600;
 
 @media screen and (width >= 768px) and (width <= 1365px) {
    text-align: center;
@@ -84,6 +85,8 @@
     margin-bottom: 42px;
   }
 }
+
+/* form */
 
 .form__boxes {
   display: flex;
@@ -173,6 +176,26 @@ form__input::placeholder {
     width: 290px;
   }
 }
+
+.form__box-name,
+.form__box-phone {
+  position: relative;
+}
+
+.form__error-message {
+  display: none;
+  color: #ff121f;
+  font-size: 14px;
+  line-height: 22px;
+  position: absolute;
+  top: 40%;
+}
+
+.form__input.error {
+  border-color: #ff121f;
+}
+
+/* contacts */
 
 .contacts {
   background-color: #ffffff;

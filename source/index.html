@@ -126,12 +126,12 @@
     <div class="section-wrapper price-wrapper">
       <h3 class="price__title">Абонементы</h3>
       <div class="price__tabs">
-        <button class="price__tab active" type="button">1 месяц</button>
-        <button class="price__tab" type="button">6 месяцев</button>
-        <button class="price__tab" type="button">12 месяцев</button>
+        <button class="price__tab active" data-duration="1">1 месяц</button>
+        <button class="price__tab" data-duration="6">6 месяцев</button>
+        <button class="price__tab" data-duration="12">12 месяцев</button>
       </div>
       <div class="price__cards">
-        <article class="price__card">
+        <article class="price__card" data-card="trainer">
           <h4 class="price__card-title">С тренером</h4>
           <p class="price__card-sessions">12 занятий</p>
           <p class="price__card-price">
@@ -140,7 +140,7 @@
           </p>
           <button class="price__card-button buy__button--light button" type="button">Купить абонемент</button>
         </article>
-        <article class="price__card">
+        <article class="price__card" data-card="daytime">
           <h4 class="price__card-title">Дневной</h4>
           <p class="price__card-time">с 8:00 до 17:00</p>
           <p class="price__card-price">
@@ -149,7 +149,7 @@
           </p>
           <button class="price__card-button buy__button--light button" type="button">Купить абонемент</button>
         </article>
-        <article class="price__card">
+        <article class="price__card" data-card="fullday">
           <h4 class="price__card-title">Полный день</h4>
           <p class="price__card-time">с 8:00 до 22:00</p>
           <p class="price__card-price">
@@ -333,6 +333,85 @@
                 </ul>
             </div>
           </div>
+
+          <div class="swiper-slide juri__item swiper-slide--six">
+            <div class="juri__item-pic">
+              <picture>
+                <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/AlexLavr@1x.webp 1x, img/juri/AlexLavr@2x.webp 2x">
+                <source media="(min-width: 767px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/AlexLavr@1x.webp 1x, img/juri/AlexLavr@2x.webp 2x">
+                <source media="(min-width: 1365px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/AlexLavr@1x.jpg 1x, img/juri/AlexLavr@2x.jpg 2x">
+                <source media="(min-width: 767px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/AlexLavr@1x.jpg 1x, img/juri/AlexLavr@2x.jpg 2x">
+                <img class="juri__pic" width="260" height="300" src="img/juri/AlexLavr@1x.jpg" alt="Член жюри Игр SuperGames Алексей Лавров">
+              </picture>
+              <span class="juri__item-name">Алексей Лавров</span>
+            </div>
+            <div class="juri__item-hover juri__person">
+                <h6 class="juri__person-name">Алексей Лавров</h6>
+                <p class="juri__person-discipline">CrossFit</p>
+                <ul class="juri__person-about">
+                  <li class="juri__person-fact">Certified Level 3 Trainer</li>
+                  <li class="juri__person-fact">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__person-fact">Опыт — 6 лет</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide juri__item swiper-slide--seven">
+            <div class="juri__item-pic">
+              <picture>
+                <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/AlndrPash@1x.webp 1x, img/juri/AlndrPash@2x.webp 2x">
+                <source media="(min-width: 767px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/AlndrPash@1x.webp 1x, img/juri/AlndrPash@2x.webp 2x">
+                <source media="(min-width: 1365px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/AlndrPash@1x.jpg 1x, img/juri/AlndrPash@2x.jpg 2x">
+                <source media="(min-width: 767px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/AlndrPash@1x.jpg 1x, img/juri/AlndrPash@2x.jpg 2x">
+                <img class="juri__pic" width="260" height="300" src="img/juri/AlndrPash@1x.jpg" alt="Член жюри Игр SuperGames Александр Пашков">
+              </picture>
+              <span class="juri__item-name">Александр Пашков</span>
+            </div>
+            <div class="juri__item-hover juri__person">
+                <h6 class="juri__person-name">Александр Пашков</h6>
+                <p class="juri__person-discipline">CrossFit</p>
+                <ul class="juri__person-about">
+                  <li class="juri__person-fact">Certified Level 3 Trainer</li>
+                  <li class="juri__person-fact">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__person-fact">Опыт — 6 лет</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide juri__item swiper-slide--eight">
+            <div class="juri__item-pic">
+              <picture>
+                <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/MarKet@1x.webp 1x, img/juri/MarKet@2x.webp 2x">
+                <source media="(min-width: 767px)" type="image/webp" width="260" height="300"
+                srcset="img/juri/MarKet@1x.webp 1x, img/juri/MarKet@2x.webp 2x">
+                <source media="(min-width: 1365px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/MarKet@1x.jpg 1x, img/juri/MarKet@2x.jpg 2x">
+                <source media="(min-width: 767px)" type="image/jpg" width="260" height="300"
+                srcset="img/juri/MarKet@1x.jpg 1x, img/juri/MarKet@2x.jpg 2x">
+                <img class="juri__pic" width="260" height="300" src="img/juri/MarKet@1x.jpg" alt="Член жюри Игр SuperGames Мария Кетова">
+              </picture>
+              <span class="juri__item-name">Мария Кетова</span>
+            </div>
+            <div class="juri__item-hover juri__person">
+                <h6 class="juri__person-name">Мария Кетова</h6>
+                <p class="juri__person-discipline">CrossFit</p>
+                <ul class="juri__person-about">
+                  <li class="juri__person-fact">Certified Level 3 Trainer</li>
+                  <li class="juri__person-fact">Победитель чемпионата России по CrossFit</li>
+                  <li class="juri__person-fact">Опыт — 6 лет</li>
+                </ul>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -622,8 +701,16 @@
     <div class="form">
       <h3 class="form__title">Бесплатное занятие</h3>
       <form class="form__boxes">
+        <div class="form__box-name">
         <input class="form__input" type="text" placeholder="Имя">
+        <span class="form__error-message message-empty">Поле не может быть пустым</span>
+        <span class="form__error-message wrong-symbols">Только буквы и пробелы</span>
+        </div>
+        <div class="form__box-phone">
         <input class="form__input" type="text" placeholder="Телефон">
+        <span class="form__error-message message-empty">Поле не может быть пустым</span>
+        <span class="form__error-message wrong-symbols">Только цифры</span>
+        </div>
         <button class="form__button" type="submit">ОТПРАВИТЬ</button>
       </form>
 
