@@ -48,13 +48,33 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const updatePrices = (duration) => {
-    const trainerCard = document.querySelector('[data-card="trainer"] .price__card-price-real');
-    const daytimeCard = document.querySelector('[data-card="daytime"] .price__card-price-real');
-    const fulldayCard = document.querySelector('[data-card="fullday"] .price__card-price-real');
+    const priceCards = document.querySelectorAll('.price__card');
 
-    if (trainerCard) trainerCard.textContent = prices[duration].trainer;
-    if (daytimeCard) daytimeCard.textContent = prices[duration].daytime;
-    if (fulldayCard) fulldayCard.textContent = prices[duration].fullday;
+    priceCards.forEach((card) => {
+      const cardType = card.getAttribute('data-card');
+      const realPriceElement = card.querySelector('.price__card-price-real');
+      const shadowPriceElement = card.querySelector('.price__card-price-shadow');
+
+      if (realPriceElement && shadowPriceElement) {
+        const newPrice = prices[duration][cardType];
+        realPriceElement.textContent = newPrice;
+        shadowPriceElement.textContent = newPrice;
+
+        // смещение shadow по left в зависимости от ширины
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth => 1366 && (duration === "6" || duration === "12")) {
+          shadowPriceElement.style.left = "13%"; // для табов 6, 12 месяцев на 1366px
+        }
+          else if (screenWidth => 768 && (duration === "6" || duration === "12")) {
+          shadowPriceElement.style.left = "15%"; // для табов 6, 12 месяцев на 768px
+        } else if (screenWidth => 320 && duration === "1") {
+          shadowPriceElement.style.left = "21%"; // для таба 1 месяц на 320px
+        } else {
+          shadowPriceElement.style.left = "";
+        }
+      }
+    });
   };
 
   priceTabs.forEach((tab) => {
@@ -67,7 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  updatePrices(1);
+  const handleResize = () => {
+    const activeTab = document.querySelector(".price__tab.active");
+    const duration = activeTab ? activeTab.getAttribute("data-duration") : "1";
+    updatePrices(duration);
+  };
+
+  window.addEventListener("resize", handleResize);
 });
 
 /* JURI свайпер */
