@@ -76,7 +76,7 @@
   width: 100%;
 }
 
-.juri__item-hover {
+.juri__item-focus {
   position: absolute;
   background-color: rgba(16, 38, 84, 0.89);
   inset: 0;
@@ -172,8 +172,14 @@
   left: -17px;
 }
 
-.juri__item:hover .juri__item-hover {
+.juri__item:focus .juri__item-focus {
   display: block;
+}
+
+.juri__item:hover .juri__item-focus {
+  @media (min-width: 1366px) {
+    display: block;
+  }
 }
 
 .juri .arrow:focus::before {

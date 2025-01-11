@@ -138,7 +138,7 @@
             <span class="price__card-price-real">5000</span>
             <span class="price__card-price-shadow">5000</span>
           </p>
-          <button class="price__card-button buy__button--light button" type="button">Купить абонемент</button>
+          <a class="price__card-button buy__button--light" href="#">Купить абонемент</a>
         </article>
         <article class="price__card" data-card="daytime">
           <h4 class="price__card-title">Дневной</h4>
@@ -147,7 +147,7 @@
             <span class="price__card-price-real">1700</span>
             <span class="price__card-price-shadow">1700</span>
           </p>
-          <button class="price__card-button buy__button--light button" type="button">Купить абонемент</button>
+          <a class="price__card-button buy__button--light" href="#">Купить абонемент</a>
         </article>
         <article class="price__card" data-card="fullday">
           <h4 class="price__card-title">Полный день</h4>
@@ -156,7 +156,7 @@
             <span class="price__card-price-real">2700</span>
             <span class="price__card-price-shadow">2700</span>
           </p>
-          <button class="price__card-button buy__button--light button" type="button">Купить абонемент</button>
+          <a class="price__card-button buy__button--light" href="#">Купить абонемент</a>
         </article>
       </div>
     </div>
@@ -181,7 +181,7 @@
           </div>
         </div>
         <p class="games__description">Ежегодные соревнования по CrossFit</p>
-        <button class="games__button" type="button">Заполнить заявку</button>
+        <a class="games__link games__button" href="#">Заполнить заявку</a>
       </div>
       <div class="games__image">
         <picture>
@@ -219,7 +219,7 @@
               </picture>
               <span class="juri__item-name">Анна Павлова</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Анна Павлова</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -245,7 +245,7 @@
               </picture>
               <span class="juri__item-name">Алексей Лавров</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Алексей Лавров</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -271,7 +271,7 @@
               </picture>
               <span class="juri__item-name">Александр Пашков</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Александр Пашков</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -297,7 +297,7 @@
               </picture>
               <span class="juri__item-name">Мария Кетова</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Мария Кетова</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -323,7 +323,7 @@
               </picture>
               <span class="juri__item-name">Анна Павлова</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Анна Павлова</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -349,7 +349,7 @@
               </picture>
               <span class="juri__item-name">Алексей Лавров</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Алексей Лавров</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -375,7 +375,7 @@
               </picture>
               <span class="juri__item-name">Александр Пашков</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Александр Пашков</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -401,7 +401,7 @@
               </picture>
               <span class="juri__item-name">Мария Кетова</span>
             </div>
-            <div class="juri__item-hover juri__person">
+            <div class="juri__item-focus juri__person">
                 <h6 class="juri__person-name">Мария Кетова</h6>
                 <p class="juri__person-discipline">CrossFit</p>
                 <ul class="juri__person-about">
@@ -700,7 +700,7 @@
   <div class="form-and-contacts-wrapper">
     <div class="form">
       <h3 class="form__title">Бесплатное занятие</h3>
-      <form class="form__boxes">
+      <form class="form__boxes" action="https://echo.htmlacademy.ru" name="free-form" method="post">
         <div class="form__box-name">
         <input class="form__input" type="text" placeholder="Имя">
         <span class="form__error-message message-empty">Поле не может быть пустым</span>
@@ -711,7 +711,7 @@
         <span class="form__error-message message-empty">Поле не может быть пустым</span>
         <span class="form__error-message wrong-symbols">Только цифры</span>
         </div>
-        <button class="form__button" type="submit">ОТПРАВИТЬ</button>
+        <button class="form__button button" type="submit">ОТПРАВИТЬ</button>
       </form>
 
     </div>
