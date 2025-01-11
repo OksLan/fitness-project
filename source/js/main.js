@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const priceTabs = document.querySelectorAll(".price__tab");
   const prices = {
-    1: { trainer: 5000, daytime: 1700, fullday: 2700 },
-    6: { trainer: "30 000", daytime: 10200, fullday: 16200 },
-    12: { trainer: 60000, daytime: 20400, fullday: 32400 },
+    1: { trainer: "5000", daytime: "1700", fullday: "2700" },
+    6: { trainer: "30 000", daytime: "10 200", fullday: "16 200" },
+    12: { trainer: "60 000", daytime: "20 400", fullday: "32 400" },
   };
 
   const updatePrices = (duration) => {
@@ -62,20 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const newPrice = prices[duration][cardType];
         realPriceElement.textContent = newPrice;
         shadowPriceElement.textContent = newPrice;
-
-        // смещение shadow по left в зависимости от ширины
-        const screenWidth = window.innerWidth;
-
-        if (screenWidth => 1366 && (duration === "6" || duration === "12")) {
-          shadowPriceElement.style.left = "13%"; // для табов 6, 12 месяцев на 1366px
-        }
-          else if (screenWidth => 768 && (duration === "6" || duration === "12")) {
-          shadowPriceElement.style.left = "15%"; // для табов 6, 12 месяцев на 768px
-        } else if (screenWidth => 320 && duration === "1") {
-          shadowPriceElement.style.left = "21%"; // для таба 1 месяц на 320px
-        } else {
-          shadowPriceElement.style.left = "";
-        }
       }
     });
   };
