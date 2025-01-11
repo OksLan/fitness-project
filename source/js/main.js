@@ -167,70 +167,6 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
 reviewsSwiper.init();
 
 /* FORM - проверка ввода данных в поля Имя и Телефон */
-// document.addEventListener("DOMContentLoaded", () => {
-//   const form = document.querySelector(".form__boxes");
-//   const nameInput = form.querySelector('input[placeholder="Имя"]');
-//   const phoneInput = form.querySelector('input[placeholder="Телефон"]');
-//   const nameEmptyMessage = form.querySelector(".form__box-name .message-empty");
-//   const nameWrongSymbolsMessage = form.querySelector(".form__box-name .wrong-symbols");
-//   const phoneEmptyMessage = form.querySelector(".form__box-phone .message-empty");
-//   const phoneWrongSymbolsMessage = form.querySelector(".form__box-phone .wrong-symbols");
-
-//   const hideAllMessages = () => {
-//     nameEmptyMessage.style.display = "none";
-//     nameWrongSymbolsMessage.style.display = "none";
-//     phoneEmptyMessage.style.display = "none";
-//     phoneWrongSymbolsMessage.style.display = "none";
-//     nameInput.classList.remove("error");
-//     phoneInput.classList.remove("error");
-//   };
-
-//   form.addEventListener("submit", (event) => {
-//     let isValid = true;
-
-//     hideAllMessages();
-
-//     // ИМЯ
-//     const nameValue = nameInput.value.trim();
-//     if (nameValue === "") {
-//       nameEmptyMessage.style.display = "block";
-//       nameInput.classList.add("error");
-//       isValid = false;
-//     } else if (!/^[А-Яа-яЁёA-Za-z\s]+$/.test(nameValue)) {
-//       nameWrongSymbolsMessage.style.display = "block";
-//       nameInput.classList.add("error");
-//       isValid = false;
-//     }
-
-//     // ТЕЛЕФОН
-//     const phoneValue = phoneInput.value.trim();
-//     if (phoneValue === "") {
-//       phoneEmptyMessage.style.display = "block";
-//       phoneInput.classList.add("error");
-//       isValid = false;
-//     } else if (!/^\d+$/.test(phoneValue)) {
-//       phoneWrongSymbolsMessage.style.display = "block";
-//       phoneInput.classList.add("error");
-//       isValid = false;
-//     }
-
-//     // не отправлять с ошибками
-//     if (!isValid) {
-//       event.preventDefault();
-//     }
-//   });
-
-//   // скрывать error-message при focus на input
-//   nameInput.addEventListener("focus", () => {
-//     nameInput.classList.remove("error");
-//     hideAllMessages();
-//   });
-//   phoneInput.addEventListener("focus", () => {
-//     phoneInput.classList.remove("error");
-//     hideAllMessages();
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".form__boxes");
   const nameInput = form.querySelector('input[placeholder="Имя"]');
@@ -240,7 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const phoneEmptyMessage = form.querySelector(".form__box-phone .message-empty");
   const phoneWrongSymbolsMessage = form.querySelector(".form__box-phone .wrong-symbols");
 
-  // Скрыть все сообщения об ошибках
   const hideAllMessages = () => {
     nameEmptyMessage.style.display = "none";
     nameWrongSymbolsMessage.style.display = "none";
@@ -253,10 +188,9 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (event) => {
     let isValid = true;
 
-    // Скрыть все сообщения перед новой проверкой
     hideAllMessages();
 
-    // Проверка поля "Имя"
+    // ИМЯ
     const nameValue = nameInput.value.trim();
     if (nameValue === "") {
       nameEmptyMessage.style.display = "block";
@@ -268,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isValid = false;
     }
 
-    // Проверка поля "Телефон"
+    // ТЕЛЕФОН
     const phoneValue = phoneInput.value.trim();
     if (phoneValue === "") {
       phoneEmptyMessage.style.display = "block";
@@ -280,13 +214,13 @@ document.addEventListener("DOMContentLoaded", () => {
       isValid = false;
     }
 
-    // Блокировка отправки формы, если есть ошибки
+    // не отправлять с ошибками
     if (!isValid) {
       event.preventDefault();
     }
   });
 
-  // Скрывать сообщения и убирать ошибку при фокусе на инпуте
+  // скрывать error-message при focus на input
   nameInput.addEventListener("focus", () => {
     nameInput.classList.remove("error");
     hideAllMessages();
@@ -296,8 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hideAllMessages();
   });
 });
-
-
 
 /* клик на logo в header/footer не обновляет страницу */
 document.addEventListener("DOMContentLoaded", () => {
