@@ -18,16 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ABOUT - запуск видео */
 document.addEventListener("DOMContentLoaded", () => {
   const videoWrapper = document.querySelector(".about__video");
-  const playButton = videoWrapper.querySelector(".play-button");
+  const playButton = videoWrapper.querySelector(".about__play-button-wrapper");
+  console.log(playButton);
+
 
   if (videoWrapper && playButton) {
     playButton.addEventListener("click", () => {
+      console.log('click');
     const videoUrl = videoWrapper.getAttribute("data-video");
       if (videoUrl) {
         const iframe = document.createElement("iframe");
         iframe.setAttribute("src", `${videoUrl}?autoplay=1`);
         iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allow", "autoplay; encrypted-media");
+        iframe.setAttribute("allow", "autoplay");
         iframe.setAttribute("allowfullscreen", "true");
         iframe.classList.add("about__iframe");
 
@@ -43,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const priceTabs = document.querySelectorAll(".price__tab");
   const prices = {
     1: { trainer: 5000, daytime: 1700, fullday: 2700 },
-    6: { trainer: 30000, daytime: 10200, fullday: 16200 },
+    6: { trainer: "30 000", daytime: 10200, fullday: 16200 },
     12: { trainer: 60000, daytime: 20400, fullday: 32400 },
   };
 
