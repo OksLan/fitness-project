@@ -15,17 +15,12 @@
 </head>
 
 <body class="page-body">
-  <!-- пример использования спрайта
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
 
   <section class="hero" data-test="hero">
     <div class="section-wrapper">
       <div class="hero__header">
-        <a class="hero__header-logo" href="index.html">
-          <svg class="logo">
+        <a class="hero__header-logo" href="index.html" alt="Логотип SuperGym">
+          <svg class="logo" width="130" height="26">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
         </a>
@@ -60,7 +55,7 @@
     </div>
   </section>
 
-  <section data-test="about" class="about">
+  <section class="about" data-test="about">
     <div class="about__gym">
       <div class="about__content">
         <h2 class="about__title">Тренажёрный зал</h2>
@@ -102,19 +97,19 @@
             alt="Видео тренажёрный зал SuperGym">
         </picture>
         <div class="about__play-button-wrapper">
-          <svg class="play-button default">
+          <svg class="play-button default" width="100" height="100">
             <use href="/__spritemap#sprite-play-button-default"></use>
           </svg>
-          <svg class="play-button hover">
+          <svg class="play-button hover" width="100" height="100">
             <use href="/__spritemap#sprite-play-button-hover"></use>
           </svg>
-          <svg class="play-button active">
+          <svg class="play-button active" width="100" height="100">
             <use href="/__spritemap#sprite-play-button-active"></use>
           </svg>
-          <svg class="play-button focus">
+          <svg class="play-button focus" width="100" height="100">
             <use href="/__spritemap#sprite-play-button-focus"></use>
           </svg>
-          <svg class="play-button disabled">
+          <svg class="play-button disabled" width="100" height="100">
             <use href="/__spritemap#sprite-play-button-disabled"></use>
           </svg>
         </div>
@@ -126,9 +121,9 @@
     <div class="section-wrapper price-wrapper">
       <h3 class="price__title">Абонементы</h3>
       <div class="price__tabs">
-        <button class="price__tab active" data-duration="1">1 месяц</button>
-        <button class="price__tab" data-duration="6">6 месяцев</button>
-        <button class="price__tab" data-duration="12">12 месяцев</button>
+        <button class="price__tab active" data-duration="1" type="button">1 месяц</button>
+        <button class="price__tab" data-duration="6" type="button">6 месяцев</button>
+        <button class="price__tab" data-duration="12" type="button">12 месяцев</button>
       </div>
       <div class="price__cards">
         <article class="price__card" data-card="trainer">
@@ -207,14 +202,14 @@
           <div class="swiper-slide juri__item swiper-slide--one">
             <div class="juri__item-pic">
               <picture>
-                <!-- <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
+                <source media="(min-width: 1365px)" type="image/webp" width="260" height="300"
                 srcset="img/juri/AnPavl@1x.webp 1x, img/juri/AnPavl@2x.webp 2x">
                 <source media="(min-width: 767px)" type="image/webp" width="260" height="300"
                 srcset="img/juri/AnPavl@1x.webp 1x, img/juri/AnPavl@2x.webp 2x">
                 <source media="(min-width: 1365px)" type="image/jpg" width="260" height="300"
                 srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x">
                 <source media="(min-width: 767px)" type="image/jpg" width="260" height="300"
-                srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x"> -->
+                srcset="img/juri/AnPavl@1x.jpg 1x, img/juri/AnPavl@2x.jpg 2x">
                 <img class="juri__pic" width="260" height="300" src="img/juri/AnPavl@1x.jpg" alt="Член жюри Игр SuperGames Анна Павлова">
               </picture>
               <span class="juri__item-name">Анна Павлова</span>
@@ -503,14 +498,14 @@
         </div>
         <div class="offers__card offers__card--two">
           <div class="offers__card-info">
-          <h4 class="offers__card-title">Месяц бесплатно</h3>
+          <h4 class="offers__card-title">Месяц бесплатно</h4>
           <p class="offers__card-text">Приведи друга, получи абонемент в подарок</p>
           <a class="offers__card-link" href="#">Подробнее</a>
           </div>
         </div>
         <div class="offers__card offers__card--three">
           <div class="offers__card-info">
-          <h4 class="offers__card-title">Скидка 20%</h3>
+          <h4 class="offers__card-title">Скидка 20%</h4>
           <p class="offers__card-text">Корпоративный фитнес с командой</p>
           <a class="offers__card-link" href="#">Подробнее</a>
           </div>
@@ -626,7 +621,6 @@
       <h3 class="reviews__title">Отзывы</h3>
 
       <div class="swiper-button-prev arrow"></div>
-
         <div class="swiper reviews__swiper">
           <div class="swiper-wrapper reviews__list">
             <div class="swiper-slide reviews__item swiper-slide--one">
@@ -690,9 +684,7 @@
             </div>
           </div>
         </div>
-
       <div class="swiper-button-next arrow"></div>
-
     </div>
   </section>
 
@@ -702,12 +694,14 @@
       <h3 class="form__title">Бесплатное занятие</h3>
       <form class="form__boxes" action="https://echo.htmlacademy.ru" name="free-form" method="post">
         <div class="form__box-name">
-        <input class="form__input" type="text" placeholder="Имя">
+        <label class="visually-hidden" for="user-name"></label>
+        <input class="form__input" type="text" name="user-name" id="user-name" placeholder="Имя">
         <span class="form__error-message message-empty">Поле не может быть пустым</span>
         <span class="form__error-message wrong-symbols">Только буквы и пробелы</span>
         </div>
         <div class="form__box-phone">
-        <input class="form__input" type="text" placeholder="Телефон">
+        <label class="visually-hidden" for="user-phone"></label>
+        <input class="form__input" type="text" name="user-phone" id="user-phone" placeholder="Телефон">
         <span class="form__error-message message-empty">Поле не может быть пустым</span>
         <span class="form__error-message wrong-symbols">Только цифры</span>
         </div>
@@ -740,9 +734,10 @@
   </section>
 
   <section class="footer" data-test="footer">
+    <h3 class="visually-hidden">Footer</h3>
     <div class="section-wrapper footer-wrapper">
       <a class="footer__logo" href="#" aria-label="Логотип SuperGym">
-        <svg class="logo">
+        <svg class="logo" width="130" height="26">
           <use href="/__spritemap#sprite-logo"></use>
         </svg>
       </a>
@@ -767,9 +762,9 @@
 
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="#" disabled>
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в ВKонтакте</span>
-              <svg class="vk-icon">
+              <svg class="vk-icon" width="14" height="14">
                 <use href="/__spritemap#sprite-vk"></use>
               </svg>
             </a>
@@ -777,7 +772,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Одноклассниках</span>
-              <svg class="ok-icon">
+              <svg class="ok-icon" width="14" height="14">
                 <use href="/__spritemap#sprite-ok"></use>
               </svg>
             </a>
@@ -785,7 +780,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы на Reddit</span>
-              <svg class="rd-icon">
+              <svg class="rd-icon" width="14" height="14">
                 <use href="/__spritemap#sprite-rd"></use>
               </svg>
             </a>
