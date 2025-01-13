@@ -54,25 +54,25 @@
 .offers__card {
   width: 560px;
   border: 7px solid;
-  border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) ;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   padding: 20px;
   text-align: left;
   color: #1c3374;
   position: relative;
 
-    @media screen and (width >= 768px) and (width <= 1365px) {
-      width: 324px;
-      height: 188px;
-    }
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    width: 324px;
+    height: 188px;
+  }
 
-    @media screen and (width >= 320px) and (width <= 767px) {
-      width: 290px;
-      height: 180px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-    }
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 290px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .offers__card--two {
@@ -93,7 +93,6 @@
 }
 
 .offers__card--three {
-
   @media screen and (width >= 320px) and (width <= 767px) {
     margin-top: 30px;
   }
@@ -260,7 +259,7 @@
 }
 
 .offers__card--highlight .offers__card-link {
-  color:#ffffff;
+  color: #ffffff;
   border-color: #ffffff;
 }
 

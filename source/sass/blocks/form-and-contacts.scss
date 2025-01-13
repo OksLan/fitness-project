@@ -48,6 +48,8 @@
 
 .contacts {
   padding: 60px 103px;
+  background-color: #ffffff;
+  color: #102654;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 768px;
@@ -70,8 +72,8 @@
   margin-bottom: 36px;
   font-weight: 600;
 
-@media screen and (width >= 768px) and (width <= 1365px) {
-   text-align: center;
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    text-align: center;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
@@ -110,7 +112,7 @@
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 205px;
-   }
+  }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     width: 100%;
@@ -132,23 +134,18 @@
 }
 
 .form__input:focus::placeholder {
- color: transparent;
+  color: transparent;
 }
 
-.form__input::invalid {
-  color: red;
-}
-
-.form__input:focus {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
+.form__input:invalid {
+  color: #ff121f;
 }
 
 .form__input:disabled {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-form__input::placeholder {
+.form__input::placeholder {
   color: #cccccc;
 }
 
@@ -196,12 +193,6 @@ form__input::placeholder {
 }
 
 /* contacts */
-
-.contacts {
-  background-color: #ffffff;
-  color: #102654;
-}
-
 .contacts__details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -277,7 +268,7 @@ form__input::placeholder {
 .contacts__details-item--three,
 .contacts__details-item--four {
   @media screen and (width >= 768px) and (width <= 1365px) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 

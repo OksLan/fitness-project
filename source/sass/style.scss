@@ -173,26 +173,26 @@ a {
 }
 
 .buy__button--light:hover {
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  color:#ffffff;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
   border: none;
 }
 
 .buy__button--light:focus {
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  color:#ffffff;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
   border: 2px solid #000000;
 }
 
 .buy__button--light:active {
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  color:rgba(255, 255, 255, 0.5);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: rgba(255, 255, 255, 0.5);
   border: none;
 }
 
 .buy__button--light:disabled {
   background: #ffffff;
-  color:  rgba(16, 38, 84, 0.3);
+  color: rgba(16, 38, 84, 0.3);
   border: 2px solid rgba(16, 38, 84, 0.3);
 }
 

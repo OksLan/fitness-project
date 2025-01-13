@@ -1,56 +1,57 @@
 .faq {
-    background-color: #f9f9f9;
-    color: #102654;
-    padding-bottom: 100px;
+  background-color: #f9f9f9;
+  color: #102654;
+  padding-bottom: 100px;
 
-    @media screen and (width >= 768px) and (width <= 1365px) {
-      padding-bottom: 60px;
-    }
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    padding-bottom: 60px;
+  }
 
-    @media screen and (width >= 320px) and (width <= 767px) {
-      padding-bottom: 70px;
-    }
+  @media screen and (width >= 320px) and (width <= 767px) {
+    padding-bottom: 70px;
+  }
 }
 
 .faq__title {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 600;
-    padding-top: 100px;
-    margin-bottom: 50px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  padding-top: 100px;
+  margin-bottom: 50px;
 
-    @media screen and (width >= 768px) and (width <= 1365px) {
-      font-size: 42px;
-      line-height: 42px;
-      padding-top: 60px;
-      margin-bottom: 45px;
-      text-align: center;
-    }
-    @media screen and (width >= 320px) and (width <= 767px) {
-      font-size: 32px;
-      line-height: 32px;
-      padding-top: 70px;
-      margin-bottom: 35px;
-      text-align: center;
-    }
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    font-size: 42px;
+    line-height: 42px;
+    padding-top: 60px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-top: 70px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
 
 .faq__container {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
 
-    @media screen and (width >= 768px) and (width <= 1365px) {
-      display: flex;
-      flex-direction: column;
-      gap: 45px;
-    }
+  @media screen and (width >= 768px) and (width <= 1365px) {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
 
-    @media screen and (width >= 320px) and (width <= 767px) {
-      display: flex;
-      flex-direction: column;
-      gap: 35px;
-    }
+  @media screen and (width >= 320px) and (width <= 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 
 /* Табы */
@@ -190,18 +191,18 @@
 }
 
 .faq__details[open] {
-  animation: open_details 4s;
+  animation: open-details 4s;
 }
 
-  @keyframes open_details {
-    0% {
-      max-height: 80px;
-    }
-
-    100% {
-      max-height: 500px;
-    }
+@keyframes open-details {
+  0% {
+    max-height: 80px;
   }
+
+  100% {
+    max-height: 500px;
+  }
+}
 
 /* свернутое состояние - кружок для плюса */
 .faq__question::before {
@@ -230,19 +231,20 @@
 
 /* свернутое состояние - плюс */
 .faq__question::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(to right, #1c3374 100%, transparent 50%),
-                linear-gradient(to bottom, #1c3374 100%, transparent 50%);
-    background-size: 100% 1px, 1px 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 827px;
-    top: 50%;
-    transform: translateY(-50%);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background:
+    linear-gradient(to right, #1c3374 100%, transparent 50%),
+    linear-gradient(to bottom, #1c3374 100%, transparent 50%);
+  background-size: 100% 1px, 1px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 827px;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     left: 646px;
@@ -268,8 +270,9 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background: linear-gradient(to right, #ffffff 100%, transparent 50%),
-              linear-gradient(to bottom, #ffffff 100%, transparent 50%);
+  background:
+    linear-gradient(to right, #ffffff 100%, transparent 50%),
+    linear-gradient(to bottom, #ffffff 100%, transparent 50%);
   background-size: 100% 1px, 1px 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -286,13 +289,13 @@
   }
 }
 
-.faq__question:focus::before{
+.faq__question:focus::before {
   background: #74819c;
   border: 1px solid #1c3374;
 }
 
 /* disabled */
-.faq__details:disabled .faq__question::before{
+.faq__details:disabled .faq__question::before {
   background: transparent;
   border: 1px solid rgba(28, 51, 116, 0.3);
 }
@@ -303,8 +306,9 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background: linear-gradient(to right, rgba(28, 51, 116, 0.3) 100%, transparent 50%),
-              linear-gradient(to bottom, rgba(28, 51, 116, 0.3) 100%, transparent 50%);
+  background:
+    linear-gradient(to right, rgba(28, 51, 116, 0.3) 100%, transparent 50%),
+    linear-gradient(to bottom, rgba(28, 51, 116, 0.3) 100%, transparent 50%);
   background-size: 100% 1px, 1px 100%;
   background-position: center;
   background-repeat: no-repeat;

@@ -51,7 +51,6 @@
 }
 
 .swiper-wrapper.juri__list {
-
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 560px;
   }
@@ -81,7 +80,7 @@
   background-color: rgba(16, 38, 84, 0.89);
   inset: 0;
   height: 300px;
-  color:#ffffff;
+  color: #ffffff;
   display: none;
 }
 
@@ -121,7 +120,7 @@
 }
 
 .juri__person-fact::marker {
-   font-size: 14px;
+  font-size: 14px;
 }
 
 .juri .swiper-button-next {
@@ -163,7 +162,7 @@
 }
 
 .juri .arrow:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;
@@ -177,13 +176,13 @@
 }
 
 .juri__item:hover .juri__item-focus {
-  @media (min-width: 1366px) {
+  @media (width >= 1366px) {
     display: block;
   }
 }
 
 .juri .arrow:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;
@@ -195,7 +194,7 @@
 }
 
 .juri .arrow:active::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;

@@ -15,7 +15,7 @@
 }
 
 .reviews__title {
-  font-family: 'Alumni', sans-serif;
+  font-family: "Alumni", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 54px;
@@ -91,7 +91,6 @@
     margin: 0 auto;
     margin-bottom: 10px;
   }
-
 }
 
 .reviews__item-name {
@@ -161,7 +160,7 @@
 }
 
 .reviews .arrow:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;
@@ -171,7 +170,7 @@
 }
 
 .reviews .arrow:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;
@@ -183,7 +182,7 @@
 }
 
 .reviews .arrow:active::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;

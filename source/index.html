@@ -19,7 +19,7 @@
   <section class="hero" data-test="hero">
     <div class="section-wrapper">
       <div class="hero__header">
-        <a class="hero__header-logo" href="index.html" alt="Логотип SuperGym">
+        <a class="hero__header-logo" href="#">
           <svg class="logo" width="130" height="26">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
@@ -36,7 +36,7 @@
         <div class="hero__headings">
           <h3 class="hero__headings-city">Омск</h3>
           <h1 class="hero__headings-main">ФИТНЕС<br>ЦЕНТР</h1>
-          <button class="hero__button buy__button--dark button" type="button">КУПИТЬ АБОНЕМЕНТ</button>
+          <button class="hero__button button" type="button">КУПИТЬ АБОНЕМЕНТ</button>
         </div>
         <div class="hero__image">
           <picture>
@@ -133,7 +133,7 @@
             <span class="price__card-price-real">5000</span>
             <span class="price__card-price-shadow">5000</span>
           </p>
-          <a class="price__card-button buy__button--light" href="#">Купить абонемент</a>
+          <a class="price__card-button button" href="#">Купить абонемент</a>
         </article>
         <article class="price__card" data-card="daytime">
           <h4 class="price__card-title">Дневной</h4>
@@ -142,7 +142,7 @@
             <span class="price__card-price-real">1700</span>
             <span class="price__card-price-shadow">1700</span>
           </p>
-          <a class="price__card-button buy__button--light" href="#">Купить абонемент</a>
+          <a class="price__card-button button" href="#">Купить абонемент</a>
         </article>
         <article class="price__card" data-card="fullday">
           <h4 class="price__card-title">Полный день</h4>
@@ -151,7 +151,7 @@
             <span class="price__card-price-real">2700</span>
             <span class="price__card-price-shadow">2700</span>
           </p>
-          <a class="price__card-button buy__button--light" href="#">Купить абонемент</a>
+          <a class="price__card-button button" href="#">Купить абонемент</a>
         </article>
       </div>
     </div>
@@ -694,14 +694,14 @@
       <h3 class="form__title">Бесплатное занятие</h3>
       <form class="form__boxes" action="https://echo.htmlacademy.ru" name="free-form" method="post">
         <div class="form__box-name">
-        <label class="visually-hidden" for="user-name"></label>
-        <input class="form__input" type="text" name="user-name" id="user-name" placeholder="Имя">
+        <label class="visually-hidden" for="name"></label>
+        <input class="form__input" type="text" name="user-name" id="name" placeholder="Имя">
         <span class="form__error-message message-empty">Поле не может быть пустым</span>
         <span class="form__error-message wrong-symbols">Только буквы и пробелы</span>
         </div>
         <div class="form__box-phone">
-        <label class="visually-hidden" for="user-phone"></label>
-        <input class="form__input" type="text" name="user-phone" id="user-phone" placeholder="Телефон">
+        <label class="visually-hidden" for="phone"></label>
+        <input class="form__input" type="text" name="user-phone" id="phone" placeholder="Телефон">
         <span class="form__error-message message-empty">Поле не может быть пустым</span>
         <span class="form__error-message wrong-symbols">Только цифры</span>
         </div>
@@ -712,19 +712,19 @@
     <div class="contacts">
       <h3 class="contacts__title">Контакты</h3>
       <ol class="contacts__details">
-       <li class="contacts__details-item contacts__details-address contacts__details-item--one">
+      <li class="contacts__details-item contacts__details-address contacts__details-item--one">
           <h5 class="contacts__details-heading">Адрес:</h5>
           <p class="contacts__details-text">г. Омск, ул. 60 лет Октября, 7</p>
-       </li>
-       <li class="contacts__details-item contacts__details-phone contacts__details-item--two">
+      </li>
+      <li class="contacts__details-item contacts__details-phone contacts__details-item--two">
           <h5 class="contacts__details-heading">Телефон:</h5>
           <a class="phone" href="tel:+88005555555">8 800 555-55-55</a>
-        </li>
-        <li class="contacts__details-item contacts__details-schedule contacts__details-item--three">
+      </li>
+      <li class="contacts__details-item contacts__details-schedule contacts__details-item--three">
           <h5 class="contacts__details-heading">График работы:</h5>
           <p class="contacts__details-text">Пн-Вс: с 8:00 до 22:00</p>
-        </li>
-        <li class="contacts__details-item contacts__details-email contacts__details-item--four">
+      </li>
+      <li class="contacts__details-item contacts__details-email contacts__details-item--four">
           <h5 class="contacts__details-heading">Email:</h5>
           <a class="e-mail" href="mailto:омск@supergym.ru">омск@supergym.ru</a>
       </li>
