@@ -92,7 +92,7 @@
 .form__boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   @media screen and (width >= 320px) and (width <= 767px) {
     display: inline;
@@ -162,6 +162,7 @@
   line-height: 12px;
   font-weight: 700;
   width: 477px;
+  margin: 0 auto;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 440px;
@@ -228,12 +229,11 @@
   height: 1px;
   rotate: 90deg;
   background-color: #74819c;
-  top: 64px;
-  left: 199px;
+  top: 58px;
+  left: 38%;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     top: 57px;
-    left: 162px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
