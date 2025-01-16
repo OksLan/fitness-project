@@ -90,22 +90,23 @@
     width: 140px;
     padding: 14px 22px;
   }
-}
 
-.faq__tab.active {
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  color: #ffffff;
-}
+  &.active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: #fff;
+    border: none;
+  }
 
-.faq__tab:hover {
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  color: #ffffff;
-}
+  &:focus:not(.active) {
+    background: #ffffff;
+    color: #102654;
+    border: 1px solid #102654;
+  }
 
-.faq__tab:focus {
-  background: #ffffff;
-  color: #102654;
-  border: 2px solid #102654;
+  &:hover:not(.active) {
+    background-color: transparent;
+    border: 1px solid #102654;
+  }
 }
 
 .faq__tab:disabled {
