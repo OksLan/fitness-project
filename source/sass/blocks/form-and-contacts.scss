@@ -11,10 +11,11 @@
 }
 
 .form-and-contacts-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media screen and (width >= 320px) and (width <= 1365px) {
-    display: block;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -32,6 +33,7 @@
   background-color: #102654;
   color: #ffffff;
   padding: 60px 103px;
+  width: 100%;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
     width: 768px;
@@ -202,6 +204,24 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    .contacts__details-item--one {
+      order: 1;
+    }
+
+    .contacts__details-item--two {
+      order: 3;
+    }
+
+    .contacts__details-item--three {
+      order: 2;
+    }
+
+    .contacts__details-item--four {
+      order: 4;
+    }
+  }
 }
 
 .contacts__details::after {
@@ -276,6 +296,7 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 5px;
+  display: block;
 
   @media screen and (width >= 320px) and (width <= 767px) {
     font-size: 20px;

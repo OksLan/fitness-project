@@ -7,13 +7,11 @@
   height: 760px;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    max-width: 768px;
     height: 574px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
     height: 412px;
-    max-width: 320px;
   }
 }
 

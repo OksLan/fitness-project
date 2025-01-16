@@ -7,12 +7,10 @@
   color: #102654;
 
   @media screen and (width >= 768px) and (width <= 1365px) {
-    width: 768px;
     height: 738px;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
-    width: 320px;
     height: 1193px;
   }
 }
